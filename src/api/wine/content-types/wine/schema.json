@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wines",
+  "info": {
+    "singularName": "wine",
+    "pluralName": "wines",
+    "displayName": "Wine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        },
+        "translate": {
+          "translate": "translate"
+        }
+      },
+      "type": "string"
+    },
+    "food": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food.food",
+      "pluginOptions": {
+        "translate": {
+          "translate": "translate"
+        }
+      }
+    }
+  }
+}
